@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Under Construction</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1e1e2f;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      animation: fadeIn 2s ease;
+    }
+
+    .gear {
+      font-size: 5rem;
+      animation: spin 3s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    #countdown {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      color: #00ffff;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="gear">⚙️</div>
+    <h1>We're Building Something Awesome!</h1>
+    <p>Our website is currently under construction. Stay tuned!</p>
+    <div id="countdown"></div>
+  </div>
+
+  <script>
+    // Countdown to a date (e.g., 7 days from now)
+    const countdownElement = document.getElementById("countdown");
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 7); // 7 days from now
+
+    function updateCountdown() {
+      const now = new Date();
+      const timeLeft = targetDate - now;
+
+      if (timeLeft <= 0) {
+        countdownElement.innerHTML = "Launching soon!";
+        return;
+      }
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+      const seconds = Math.floor((timeLeft / 1000) % 60);
+
+      countdownElement.innerHTML = 
+        `Launching in ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
