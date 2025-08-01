@@ -2,38 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-<<<<<<< HEAD
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sujan Bhattarai - Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="animations.css" />
-
-=======
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Sujan Bhattarai - Portfolio</title>
-
-  <!-- Font Awesome and Google Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="animations.css">
   <link rel="stylesheet" href="sujan.css">
->>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
 
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-<<<<<<< HEAD
       background-color: #f9f9f9;
       color: #111;
       display: flex;
       overflow-x: hidden;
     }
 
-    /* Sidebar */
     nav {
       width: 160px;
       background-color: #111;
@@ -68,35 +54,29 @@
     }
 
     header {
-      background-color: #005f8a;
-      color: white;
-      padding: 40px;
-=======
-      background-color: #ffffff;
-      color: #111;
-      line-height: 1.6;
-    }
-
-    header {
->>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
       text-align: center;
-      background-color: #111;
+      background-color: #0077b5;
       padding: 20px;
       animation: fadeInDown 1s ease-in-out;
       color: white;
       border-bottom: 2px solid #121414;
     }
 
-<<<<<<< HEAD
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
     .social-icons a {
-      margin: 0 8px;
+      margin: 0 10px;
       color: white;
-      font-size: 1.3rem;
       text-decoration: none;
+      font-size: 1.4em;
+      transition: color 0.3s;
     }
 
     .social-icons a:hover {
-      color: #ddd;
+      color: #0077b5;
     }
 
     main {
@@ -155,13 +135,28 @@
       color: white;
     }
 
-    /* Responsive Design */
+    .hamburger {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      font-size: 1.8rem;
+      z-index: 11;
+      cursor: pointer;
+      color: #0077b5;
+      background-color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      display: none;
+    }
+
     @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
       nav {
-        position: fixed;
-        top: 0;
         left: -160px;
-        height: 100vh;
         z-index: 10;
       }
 
@@ -169,20 +164,10 @@
         left: 0;
       }
 
-      .hamburger {
-        position: fixed;
-        top: 15px;
-        left: 15px;
-        font-size: 1.5rem;
-        z-index: 11;
-        cursor: pointer;
-        color: #0077b5;
-      }
-
       .content {
         margin-left: 0;
         width: 100%;
-        padding-top: 60px;
+        padding-top: 80px;
       }
 
       .summary-container {
@@ -195,93 +180,6 @@
       }
     }
 
-    html, body {
-      width: 100%;
-=======
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    header p {
-      margin: 5px 0 15px;
-      font-size: 1.1em;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1.4em;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #0077b5;
-    }
-
-    nav {
-      background-color: #000;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav ul li a {
-      display: block;
-      padding: 15px 20px;
-      color: white;
-      text-decoration: none;
-      transition: background 0.3s;
->>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
-    }
-
-    nav ul li a:hover {
-      background-color: #d4d1d1;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    section h2 {
-      border-bottom: 2px solid #0077b5;
-      padding-bottom: 5px;
-      color: #111;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background-color: #051720;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #005f8a;
-    }
-
-    footer {
-      text-align: center;
-      padding: 12px;
-      background-color: #070c0f;
-      color: white;
-    }
-
     @keyframes fadeInDown {
       from {
         opacity: 0;
@@ -292,149 +190,15 @@
         transform: translateY(0);
       }
     }
-/* ========== Tablet (768px to 1024px) ========== */
-@media (max-width: 1024px) {
-  header h1 {
-    font-size: 2em;
-  }
-
-  header p {
-    font-size: 1em;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  nav ul li {
-    flex: 1 1 50%;
-    text-align: center;
-  }
-
-  nav ul li a {
-    padding: 12px;
-    font-size: 1em;
-  }
-
-  main {
-    padding: 15px;
-  }
-
-  section h2 {
-    font-size: 1.3em;
-  }
-
-  ul li {
-    font-size: 1em;
-  }
-}
-
-/* ========== Mobile (≤ 768px) ========== */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.6em;
-  }
-
-  header p {
-    font-size: 0.95em;
-  }
-
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .social-icons a {
-    font-size: 1.3em;
-    margin: 0 8px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  nav ul li {
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #222;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 14px;
-    font-size: 1em;
-  }
-
-  main {
-    padding: 10px;
-  }
-
-  section {
-    margin-bottom: 30px;
-  }
-
-  section h2 {
-    font-size: 1.2em;
-  }
-
-  ul li {
-    font-size: 0.95em;
-    line-height: 1.5;
-  }
-
-  button {
-    width: 100%;
-    padding: 12px;
-    font-size: 1em;
-    margin-top: 10px;
-  }
-
-  footer {
-    font-size: 0.9em;
-    padding: 12px;
-  }
-}
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
   </style>
 </head>
 
 <body>
-<<<<<<< HEAD
-
   <div class="hamburger" onclick="toggleMenu()">
     <i class="fas fa-bars"></i>
   </div>
 
   <nav id="sidebar">
-=======
-  <header>
-    <h1>Sujan Bhattarai</h1>
-   
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/sujan-bhattarai-b3027b252/" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.instagram.com/sujanbhatt_arai/" target="_blank" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://github.com/Sujjjn" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </header>
-
-  <nav>
->>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
     <ul>
       <li><a href="#summary">Summary</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -445,7 +209,6 @@ html, body {
     </ul>
   </nav>
 
-<<<<<<< HEAD
   <div class="content">
     <header>
       <h1>Sujan Bhattarai</h1>
@@ -533,6 +296,7 @@ html, body {
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
     function showThanks() {
       alert("Thanks for reaching out! 😊");
     }
@@ -540,84 +304,6 @@ html, body {
     function toggleMenu() {
       document.getElementById("sidebar").classList.toggle("show");
     }
-=======
-  <main>
-    <section id="summary">
-      <h2>Professional Summary</h2>
-      <p>
-        
-        Hi! I'm Sujan Bhattarai, a dedicated professional with a keen interest in Data Science and Artificial Intelligence.. My passion lies in transforming raw data into actionable insights, especially in areas like financial trends, business performance, and intelligent automation.
-
-I enjoy diving into numbers, asking critical questions, and visualizing stories from data. I'm currently exploring real-time analytics, market forecasting, and the intersection of AI with decision-making in business and investing.
-
-Outside of my work, I love experimenting with financial data, building Power BI dashboards, and creating projects that reveal how data shapes the world around us.
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Key Skills</h2>
-      <ul>
-        <li><strong>Programming:</strong> C, C++, Python, HTML, CSS</li>
-        <li><strong>Data Science Tools:</strong> NumPy, Pandas, Matplotlib</li>
-        <li><strong>Power BI, Data Analysis</strong></li>
-        <li><strong>SQL:</strong> PostgreSQL</li>
-        <li><strong>Major Skill:</strong> Problem Solving, Algorithms</li>
-        <li><strong>OS:</strong> Windows, Linux</li>
-      </ul>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>BIT (2024–2028):</strong> Tribhuvan University, Lalitpur</li>
-        <li><strong>High School (2021–2023):</strong> Devi Secondary School, Jhapa</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>Analyzing Customer Churn of Telephone Company in Power BI</li>
-        <li>Investigating Netflix Movies</li>
-        <li>Stock Momentum Analysis of NEPSE</li>
-        <li>Various Interactive Dashboards for Business Insight</li>
-        <li>NEPSE Market Self-Analysis and Visualization</li>
-      </ul>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Computer Science:</strong> Built applications using Python for automation and visualization</li>
-        <li><strong>Math:</strong> Applied Algebra, Statistics, and Calculus in data modeling</li>
-        <li><strong>Data Analysis:</strong> Performed data cleaning, transformation, and visualization with AI tools</li>
-        <li><strong>Economics:</strong> Conducted market trend analysis and interpreted financial indicators</li>
-        <li><strong>NEPSE Research:</strong> Analyzed NEPSE data using Power BI and Python, evaluated technical indicators, and built trading insights</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> sujanbhattarai603@gmail.com</p>
-      <p><strong>Phone:</strong> +977 9840731759</p>
-      <p><strong>Address:</strong> Lalitpur, Nepal</p>
-      <button onclick="showThanks()">Say Hi!</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span id="year"></span> Sujan Bhattarai</p>
-  </footer>
-
-  <script>
-    // Set current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Button action
-    function showThanks() {
-      alert("Thanks for reaching out! 😊");
-    }
->>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
   </script>
 </body>
 </html>
