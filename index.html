@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+<<<<<<< HEAD
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sujan Bhattarai - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="animations.css" />
+
+=======
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -11,18 +19,66 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="sujan.css">
+>>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
 
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
+<<<<<<< HEAD
+      background-color: #f9f9f9;
+      color: #111;
+      display: flex;
+      overflow-x: hidden;
+    }
+
+    /* Sidebar */
+    nav {
+      width: 160px;
+      background-color: #111;
+      min-height: 100vh;
+      padding-top: 20px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      transition: 0.3s;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 12px 16px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      background-color: #0077b5;
+    }
+
+    .content {
+      margin-left: 200px;
+      width: calc(100% - 180px);
+    }
+
+    header {
+      background-color: #005f8a;
+      color: white;
+      padding: 40px;
+=======
       background-color: #ffffff;
       color: #111;
       line-height: 1.6;
     }
 
     header {
+>>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
       text-align: center;
       background-color: #111;
       padding: 20px;
@@ -31,6 +87,117 @@
       border-bottom: 2px solid #121414;
     }
 
+<<<<<<< HEAD
+    .social-icons a {
+      margin: 0 8px;
+      color: white;
+      font-size: 1.3rem;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #ddd;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      color: #0077b5;
+      border-bottom: 2px solid #0077b5;
+      padding-bottom: 5px;
+    }
+
+    .summary-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .summary-text {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .summary-photo img {
+      max-width: 180px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0077b5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #005f8a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 12px;
+      background-color: #111;
+      color: white;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        position: fixed;
+        top: 0;
+        left: -160px;
+        height: 100vh;
+        z-index: 10;
+      }
+
+      nav.show {
+        left: 0;
+      }
+
+      .hamburger {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        font-size: 1.5rem;
+        z-index: 11;
+        cursor: pointer;
+        color: #0077b5;
+      }
+
+      .content {
+        margin-left: 0;
+        width: 100%;
+        padding-top: 60px;
+      }
+
+      .summary-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .summary-photo img {
+        max-width: 100%;
+      }
+    }
+
+    html, body {
+      width: 100%;
+=======
     header h1 {
       margin: 0;
       font-size: 2.5em;
@@ -71,6 +238,7 @@
       color: white;
       text-decoration: none;
       transition: background 0.3s;
+>>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
     }
 
     nav ul li a:hover {
@@ -241,6 +409,14 @@ html, body {
 </head>
 
 <body>
+<<<<<<< HEAD
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav id="sidebar">
+=======
   <header>
     <h1>Sujan Bhattarai</h1>
    
@@ -258,6 +434,7 @@ html, body {
   </header>
 
   <nav>
+>>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
     <ul>
       <li><a href="#summary">Summary</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -268,6 +445,102 @@ html, body {
     </ul>
   </nav>
 
+<<<<<<< HEAD
+  <div class="content">
+    <header>
+      <h1>Sujan Bhattarai</h1>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/sujan-bhattarai-b3027b252/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/sujanbhatt_arai/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Sujjjn" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="summary">
+        <h2>Professional Summary</h2>
+        <div class="summary-container">
+          <div class="summary-text">
+            <p>
+              Hi! I'm Sujan Bhattarai, a dedicated professional with a keen interest in Data Science and Artificial Intelligence. My passion lies in transforming raw data into actionable insights, especially in areas like financial trends, business performance, and intelligent automation.
+              <br><br>
+              I enjoy diving into numbers, asking critical questions, and visualizing stories from data. I'm currently exploring real-time analytics, market forecasting, and the intersection of AI with decision-making in business and investing.
+              <br><br>
+              Outside of my work, I love experimenting with financial data, building Power BI dashboards, and creating projects that reveal how data shapes the world around us.
+            </p>
+          </div>
+          <div class="summary-photo">
+            <img src="mew.jpg" alt="Sujan Bhattarai">
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Key Skills</h2>
+        <ul>
+          <li><strong>Programming:</strong> C, C++, Python, HTML, CSS</li>
+          <li><strong>Data Science Tools:</strong> NumPy, Pandas, Matplotlib</li>
+          <li><strong>Power BI, Data Analysis</strong></li>
+          <li><strong>SQL:</strong> PostgreSQL</li>
+          <li><strong>Major Skill:</strong> Problem Solving, Algorithms</li>
+          <li><strong>OS:</strong> Windows, Linux</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>BIT (2024–2028):</strong> Tribhuvan University, Lalitpur</li>
+          <li><strong>High School (2021–2023):</strong> Devi Secondary School, Jhapa</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>Analyzing Customer Churn of Telephone Company in Power BI</li>
+          <li>Investigating Netflix Movies</li>
+          <li>Stock Momentum Analysis of NEPSE</li>
+          <li>Various Interactive Dashboards for Business Insight</li>
+          <li>NEPSE Market Self-Analysis and Visualization</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li><strong>Computer Science:</strong> Built applications using Python for automation and visualization</li>
+          <li><strong>Math:</strong> Applied Algebra, Statistics, and Calculus in data modeling</li>
+          <li><strong>Data Analysis:</strong> Performed data cleaning, transformation, and visualization with AI tools</li>
+          <li><strong>Economics:</strong> Conducted market trend analysis and interpreted financial indicators</li>
+          <li><strong>NEPSE Research:</strong> Analyzed NEPSE data using Power BI and Python, evaluated technical indicators, and built trading insights</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> sujanbhattarai603@gmail.com</p>
+        <p><strong>Phone:</strong> +977 9840731759</p>
+        <p><strong>Address:</strong> Lalitpur, Nepal</p>
+        <button onclick="showThanks()">Say Hi!</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Sujan Bhattarai</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function showThanks() {
+      alert("Thanks for reaching out! 😊");
+    }
+
+    function toggleMenu() {
+      document.getElementById("sidebar").classList.toggle("show");
+    }
+=======
   <main>
     <section id="summary">
       <h2>Professional Summary</h2>
@@ -344,6 +617,7 @@ Outside of my work, I love experimenting with financial data, building Power BI 
     function showThanks() {
       alert("Thanks for reaching out! 😊");
     }
+>>>>>>> 66faf3b3f788d21d12779ee20f3ba4da359a0057
   </script>
 </body>
 </html>

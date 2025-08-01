@@ -1,0 +1,13 @@
+.content {
+  margin-left: 200px;
+  padding: 40px 50px; /* Added padding left and right */
+  width: calc(100% - 160px);
+  box-sizing: border-box;
+  max-width: 1200px; /* Limit max width for large screens */
+}
+
+main {
+  width: 100%;
+}
+
+
